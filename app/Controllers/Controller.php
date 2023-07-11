@@ -29,6 +29,11 @@ class Controller{
 
         }
 
-    }    
+    }
+    
+    // Este metodo nos va a redirigir a la ruta que nosotros le pasemos popr parametro
+    public function redirect($route){
+        header("Location: {$route}");
+    }
 
 }

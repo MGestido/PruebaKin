@@ -6,8 +6,10 @@ use App\Models\Contact;
 class ContactController extends Controller
 {
     public function index(){
+        // Instancia del modelo para acceder a BD
         $model = new Contact;
 
+        // Obtenemos todos los contactos
         $contacts = $model->all();
 
         // Le paso a la vista el array de contactos
@@ -17,11 +19,22 @@ class ContactController extends Controller
     }
 
     public function create(){
-        return "Aqui se procesara el formulario para un contacto";
+        return $this->view('contacts.create');
     }
 
-    public function stroe(){
-        return "Aqui se procesara el formulñario para crear un contactol";
+    public function store(){
+
+        // Retorna los datos del formulario
+        $data = $_POST;
+
+        // Instancia del modelo para acceder a BD
+        $model = new Contact;
+
+        // Creamos el contacto
+        $model ->create($data);
+
+        // redirigimos con el metodo que definimos en Controller
+        return $this->redirect('/contactos');
     }
     
     public function edit(){
