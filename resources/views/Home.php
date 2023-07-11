@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Prueba: Pagina de home, no final</h1>
+    <h1>Prueba: Pagina de home, inal</h1>
     <!--el ?= es como poner ?php
     Estas variables las mandamos desde el homecontroller-->
     <p>Titulo <?= $title ?></p>
