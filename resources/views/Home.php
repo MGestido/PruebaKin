@@ -8,7 +8,7 @@
 <body>
     <h1>Prueba: Pagina de home, fffinallll</h1>
     <!--el ?= es como poner ?php
-    Estas variables las mandamos desde el homecontroller-->
+    Estas variables las mandamos desde el homecontrollerr-->
     <p>Titulo <?= $title ?></p>
     <p>Descripcion <?= $description ?></p>
 </body>
