@@ -1,0 +1,41 @@
+Inicio
+Para entrar, hay que abrir el xamp y ejecutar el MySQL
+Luego ingresar, y en el +, abris una nueva conexion, solamente cambiandole el nombre y el puerto si es necesario
+
+Secciones
+1) Administrador
+2) Esqemas
+
+1) Divida en gestion, instancia y rendimiento. 
+Gestion: Tareas administrativas
+Instancias: Instancia del servidor que estamos ejecutando. 
+Rendimiento: Conocer estadisticas del rendimiento actual
+
+2) Todas las bases de datos disoponibles para el usuario que ingrese. 
+
+
+Schemas
+Tenemos, tablas, vistas y funciones. 
+
+Tipos de datos:
+- Numericos: tinyint, smallint, integer, mediumint, bigint (enteros de mas chico a mas grande). 
+- Decimales: decimal, numeric, float, double. Decimal y numeric son valores muy precisos. Float no tan preciso, dobule igual pero mas grande. 
+
+- Fechas:
+date, time, datetime, timestamp. El ultimo almacena igual que datetime, pero tiene un rngo de almacenamiento menor a datetime.
+
+- Datos caracter
++ Char(5) - En este caso, almacena 5 caracteres
++ Varchar(20) - Almacena una cadena de 20. Es mas efectivo que el char, dado que solamente utiliza la memoria que se use, por mas numero grande que pongamos entre parentesis.
++ Text - Texto 
++ mediumtext - texto pero con mas espacio
++ longtext - Mas espacio que el medio.
++ Blob - Objeto vinario con longitud variable
+
+Propiedades de cada tupla en las tablas
+PK: Primary key
+NN: Not null
+AI: Autoincremental
+
+- Consultas
++ Match aghainst: Se utiliza en index full text. Es para buscar texto que tengan ese indice, busca por texto

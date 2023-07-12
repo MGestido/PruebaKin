@@ -1,0 +1,3 @@
+- Sacar modo seguro del update
+Si no se saca, en el where solo podemos filtrar por id
+Para eso vamos a edit, preferencias, debaj del todo aparece un checkbox que dice safe Updates.
